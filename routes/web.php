@@ -21,3 +21,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 
 
 Route::get('/posts', [PostController::class, 'index'])->name('posts');
+Route::get('/post/create', [PostController::class, 'create']);

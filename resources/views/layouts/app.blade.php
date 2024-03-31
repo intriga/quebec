@@ -29,7 +29,7 @@
         <!-- /.sidebar -->
 
         <!-- Content Wrapper. Contains page content -->
-        <main class="py-4">
+        <main id="app" class="py-4">
             @yield('content')
         </main>
         <!-- /.content-wrapper -->
