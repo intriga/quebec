@@ -29,9 +29,9 @@
                         <td>{{ value.title }}</td>
                         <td>{{ format_date(value.created_at) }}</td>
                         <td>
-                            <button type="button" class="btn btn-success">
+                            <a :href="'/post/' + value.slug" type="button" class="btn btn-success">
                                 <i class="fas fa-eye"></i>
-                            </button>
+                            </a>
                             <button type="button" class="btn btn-warning">
                                 <i class="fas fa-edit"></i>
                             </button>
