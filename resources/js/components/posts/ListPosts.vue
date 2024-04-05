@@ -32,9 +32,9 @@
                             <a :href="'/post/' + value.slug" type="button" class="btn btn-success">
                                 <i class="fas fa-eye"></i>
                             </a>
-                            <button type="button" class="btn btn-warning">
+                            <a :href="'/post/' + value.slug + '/edit'" type="button" class="btn btn-warning">
                                 <i class="fas fa-edit"></i>
-                            </button>
+                            </a>
                             <button type="button" class="btn btn-danger">
                                 <i class="fas fa-eraser"></i>
                             </button>

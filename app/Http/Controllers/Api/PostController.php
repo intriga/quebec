@@ -50,9 +50,10 @@ class PostController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(string $slug)
     {
-        //
+        $post = Post::where('slug', $slug)->first();
+        return response()->json($post);
     }
 
     /**
@@ -60,7 +61,11 @@ class PostController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $post = Post::find($id);
+        $post->title = $request->input('title');
+        $post->slug = $request->input('slug');
+        $post->content = $request->input('content');
+        $post->save();
     }
 
     /**

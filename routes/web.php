@@ -23,3 +23,4 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/posts', [PostController::class, 'index'])->name('posts');
 Route::get('/post/create', [PostController::class, 'create']);
 Route::get('/post/{slug}', [PostController::class, 'show']);
+Route::get('/post/{slug}/edit', [PostController::class, 'edit']);
